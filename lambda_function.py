@@ -31,7 +31,7 @@ def lambda_handler(event, context):
             # Crie um dicionário com os resultados da consulta
             alunos = {}
             for row in results:
-                alunos[row[0]] = {"nome": row[1], "idade": row[2]}
+                alunos[row[0]] = {"nome": row[1], "email": row[2]}
 
             # Retorne os resultados da consulta em formato JSON com status
             # code 200
